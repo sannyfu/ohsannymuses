@@ -1,0 +1,117 @@
+
+
+body {
+  line-height: 1.2;
+}
+/* *電腦版設計  /
+/* 最上方banner資訊 */
+.mobile-frame{
+  display: none;
+
+}
+.title {
+  background-color: rgb(237, 190, 181);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 0px;
+  margin-left: 60px;
+}
+.text {
+  font-size: 60px;
+  color: #435659;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+.info {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column; /* 改為垂直排列 */
+  justify-content: flex-start; /* 可以更改為頂部對齊 */
+  align-items: center; /* 水平居中 */
+  height: 200px;
+  margin: 40px 20px;
+}
+
+/* 左邊固定排列 */
+.left {
+  display: flex;
+  justify-content: flex-start; /* 項目從左邊對齊 */
+  background-color: rgb(196, 195, 195);
+  color: rgb(35, 135, 163);
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 20px;
+  width: 100%; /* 讓左邊部分佔滿 */
+}
+
+/* 右邊彈性填滿 */
+.right {
+  display: flex;
+  justify-content: flex-start; /* 項目從左邊對齊 */
+  background-color: rgb(233, 229, 229);
+  color: rgb(49, 48, 48);
+  font-size: 20px;
+  padding: 20px 20px;
+  width: 100%; /* 讓右邊部分佔滿 */
+  margin-bottom: 20px;
+}
+
+/* footer */
+.footer ul {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.footer li i {
+  font-size: 30px;
+  color: rgb(35, 135, 163);
+  margin: 0px 20px;
+}
+
+.footer li i:hover {
+  color: rgb(198, 198, 198);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* 手機版設計 */
+＠media(max-width:500px){
+  .text{font-size:20px;
+  }
+
+  .frame{
+    display:none;
+  }
+
+  .mobile-frame{
+    display:block;
+  }
+
+  .left{
+    width:90%;
+
+  }
+
+  .right{
+    width:90%
+  }
+}
