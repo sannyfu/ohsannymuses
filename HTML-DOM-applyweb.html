@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>we help 第六屆申請表</title>
+  <style>
+    img{width:50%;
+    }
+    tr,th{
+      border: 1px;color: blanchedalmond;
+    }
+  </style>
+</head>
+<body>
+  <!-- 要在按鈕下指令所以function函示寫在onclick -->
+  <div>
+    <span onclick="gotoapply();">WeHelp申請書</span>
+    <span onclick="gotowork();">作品集連結</span>
+    <span onclick="gotoshop();">購物車</span>
+  </div>
+  <hr>
+  <div id="apply">WeHelp申請書WeHelp申請書WeHelp申請書WeHelp申請書WeHelp申請書</div>
+  <div id="work" style=display:none>
+    <img src="花.jpg">
+  </div>
+  <div id="shop" style="display: none;">
+    shopppppppppp
+    <table>
+      <th>shopform</th>
+    </table>
+    <table>
+      <th>shopppp</th>
+      <tr>2222</tr>
+    </table>
+
+  </div>
+<!-- function建立在script裡 -->
+  <script>
+    function gotoapply(){
+      //先取得要操作的標籤
+      let applydiv=document.querySelector("#apply");
+      let workdiv=document.querySelector("#work");
+      let shopdiv=document.querySelector("#shop");
+      //再針對標籤做操作
+      applydiv.style.display="block";
+      workdiv.style.display="none";
+      shopdiv.style.display="none";
+
+    }
+
+    function gotowork(){
+      //先取得要操作的標籤
+      let applydiv=document.querySelector("#apply");
+      let workdiv=document.querySelector("#work");
+      let shopdiv=document.querySelector("#shop");
+      //再針對標籤做操作
+      applydiv.style.display="none";
+      workdiv.style.display="block";
+      shopdiv.style.display="none";
+
+    }
+    function gotoshop(){
+      //先取得要操作的標籤
+      let applydiv=document.querySelector("#apply");
+      let workdiv=document.querySelector("#work");
+      let shopdiv=document.querySelector("#shop");
+      //再針對標籤做操作
+      applydiv.style.display="none";
+      workdiv.style.display="none";
+      shopdiv.style.display="block";
+
+    }
+
+  </script>
+   
+
+
+</body>
+</html>
